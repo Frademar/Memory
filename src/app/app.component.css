@@ -1,0 +1,38 @@
+.ruota-180{
+    transition-timing-function: ease-in-out;
+    transform: rotateY(180deg);
+}
+
+.trasform-180{
+    transform: rotateY(180deg);
+}
+
+.ruota-360{
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transform: rotateY(360deg);
+}
+
+.perspective{
+    perspective: 1000px;
+}
+
+.transform-preserve{
+    transform-style: preserve-3d;
+}
+
+.backface-visibility{
+    backface-visibility: hidden;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.pointer-events{
+    pointer-events: none;
+}
+
+.transition{
+    transition-duration: 1000ms;
+}

@@ -1,0 +1,10 @@
+<div class="container d-flex align-items-center vh-100">
+  <div class="row justify-content-center align-items-end h-50">
+    <div class="col-2 position-relative perspective p-0 mx-1 my-1" *ngFor="let card of listaCard; let i = index" style="width:159px; height:159px" >
+      <div id="pokemon{{i}}" class="w-100 h-100 p-0 transform-preserve cursor-pointer transition" (click)="ruotaCarta($event,i)" [ngClass]="{'pointer-events':disabilita}" >
+        <img src="https://www.heliosguzzi.com/cms/contenuto/c_2421/varianti/t_variante_228864.png" class="border border-black rounded position-absolute bottom-0 start-0 w-100 h-100 p-0 object-fit-cover backface-visibility" alt="copertina">
+        <img src="{{card.url}}" class="border border-black rounded position-absolute bottom-0 start-0 w-100 h-100 p-0 object-fit-cover backface-visibility trasform-180" alt="pokemon">
+      </div>
+    </div>
+  </div>
+</div>
